@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Student Feedback Form</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="text" id="subject" placeholder="Subject">
+    <select id="rating">
+      <option value="">Rating (1–5)</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    <textarea id="comment" placeholder="Write your feedback..."></textarea>
+    <button onclick="submitFeedback()">Submit</button>
+
+    <h3> Feedback Responses</h3>
+    <ul id="feedbackList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
